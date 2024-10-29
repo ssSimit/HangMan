@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public GameManager gm;
     public RectTransform bgGO;
+    public GameObject y8Img;
     public GameObject menuButtons;
     public GameObject creditGO;
     public RectTransform endGameGO;
@@ -40,6 +41,7 @@ public class UIManager : MonoBehaviour
     {
         LeanTween.scale(menuButtons, new Vector2(1f, 1f), duration).setEase(popEase).setDelay(0.2f);
         LeanTween.scale(soundButton, new Vector2(1f, 1f), duration).setEase(popEase).setDelay(0.2f);
+        LeanTween.scale(y8Img, new Vector2(1f, 1f), duration).setEase(popEase).setDelay(0.2f);
     }
 
 

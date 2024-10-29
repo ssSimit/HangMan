@@ -22,10 +22,7 @@ public class WordManager : MonoBehaviour
         {
             lines = wordFile.text.Split(new[] { "\n", "\r\n" }, System.StringSplitOptions.RemoveEmptyEntries);
         }
-        else
-        {
-            Debug.LogError("CSV file not found in Resources folder!");
-        }
+        
     }
 
     public string[] GetRandomWord()
@@ -33,7 +30,6 @@ public class WordManager : MonoBehaviour
         
         if (lines == null || lines.Length == 0)
         {
-            Debug.LogError("Word list is empty or not loaded!");
             return new string[] { string.Empty, string.Empty };
         }
 

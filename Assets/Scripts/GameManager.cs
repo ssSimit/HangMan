@@ -31,15 +31,12 @@ public class GameManager : MonoBehaviour
         string category;
         if (values.Length != 2 || string.IsNullOrEmpty(values[0]) || string.IsNullOrEmpty(values[1]))
         {
-            Debug.Log("not valid values");
             return;
         }
         word = values[0];
         category = values[1];
         hintTxt.text = "("+category+")";
         currentWord = word;
-        Debug.Log(word);
-
         int childCount = 0;
 
         foreach(Transform child in blankParent)
