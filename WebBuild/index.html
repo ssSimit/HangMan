@@ -6,8 +6,8 @@
     <title>Unity Web Player | HangMan</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #000000"></canvas>
-    <script src="Build/WebBuild.loader.js"></script>
+    <canvas id="unity-canvas" width=960 height=540 tabindex="-1" style="width: 960px; height: 540px; background: #000000"></canvas>
+    <script src="Build/webBuild.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -26,9 +26,9 @@
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
         arguments: [],
-        dataUrl: "Build/WebBuild.data.unityweb",
-        frameworkUrl: "Build/WebBuild.framework.js.unityweb",
-        codeUrl: "Build/WebBuild.wasm.unityweb",
+        dataUrl: "Build/webBuild.data.unityweb",
+        frameworkUrl: "Build/webBuild.framework.js.unityweb",
+        codeUrl: "Build/webBuild.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "ZeusBro Studio",
         productName: "HangMan",
